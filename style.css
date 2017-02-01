@@ -1,0 +1,43 @@
+body
+{
+    min-width:760px;
+    // background-color: black;
+    color: silver;
+}
+
+header
+{
+    text-align:center;
+}
+
+footer
+{
+    text-align:center;
+}
+
+main
+{
+    // background: rgba(14, 12, 12, 0.74);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 760px; 
+    text-align: justify;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;}
+
+h1
+{
+    color: #FF8C00;
+}
+
+i 
+{
+    font-style: italic;
+}
+
+.center-text
+{
+    text-align:center;
+}
