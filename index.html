@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <!-- jquery mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -10,13 +13,26 @@
     <!-- feyberryjam -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- programmatically change colors -->
+    <script>
+        $(document).on("pagecreate", 
+        function () 
+        {
+            $(".ui-collapsible-heading-toggle").css('color', '#FF8C00');
+            $(".ui-title").css('color', 'silver');
+        });
+    </script>
+
+    <!-- Skye, quit looking for easter eggs! -->
+    
 </head>
+
 <body>
     <div data-role="page" id="pageone" data-theme="b">
 
         <div data-role="header" data-theme="b">
             <h1>
-            <img src="media/logo.png" alt="OC do not steal!"><br>
+            <img src="media/logo.png" alt="OC do not steal!" title="OC do not steal!"><br>
             <i>Yendor: Prelude <br> coming eventually!</i>
             </h1>
         </div>
@@ -36,7 +52,7 @@
             </div>
             <div data-role="collapsible" data-theme="b" data-content-theme="b">
                 <h1>Okay then, so what is Yendor: Prelude?</h1>
-                <p>Yendor: Prelude is my current project!  It's what I started working on after I messed with
+                <p data-wrapper-class="faehairtext">Yendor: Prelude is my current project!  It's what I started working on after I messed with
                 Minecraft modding for a year and randomly got excited about working on a Metroidvania title again.
                 I'll try to create a page dedicated to it "soon" (read: not soon) but in the mean time you can
                 try tossing a question at my <a href="https://twitter.com/FeyberryJam">twitter account</a> and 
